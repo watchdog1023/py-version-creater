@@ -30,7 +30,6 @@ int main(int argc, char* argv[])
   else
     {
       make_version(argv[1],argv[2],argv[3],argv[4],argv[5],argv[6],argv[7],argv[8],argv[9]);
-//      make_version(string(argv[1]),string(argv[2]),string(argv[3]),string(argv[4]),string(argv[5]),string(argv[6]),string(argv[7]),string(argv[8]),string(argv[9]),string(argv[10]));
     }
 }
 
@@ -102,7 +101,7 @@ void make_version(string CompanyName,string ProductName,string ProductVersion,st
   myfile << "StringStruct(u'FileDescription', u'" + FileDescription + "'), \n";
   myfile << "StringStruct(u'LegalCopyright', u'" + LegalCopyright + "'), \n";
   myfile << "StringStruct(u'LegalTrademarks', u'" + LegalTrademarks + "'),]) ]), \n";
-  myfile << "VarFileInfo([VarStruct(u'Translation', [1033, 1200])]) ] ) ```\n";
+  myfile << "VarFileInfo([VarStruct(u'Translation', [1033, 1200])]) ] )\n";
   myfile.close();
   cout << "Your version.txt has been Generated" << endl;
 }
