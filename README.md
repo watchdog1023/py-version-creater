@@ -1,3 +1,3 @@
 # Py-version-creater
 
-This is a simple application that will generater a version.txt file that can be used to pyinstaller to sign the exe
+This is a simple application that will generate a version.txt file which can be used with pyinstaller to sign the exe's
